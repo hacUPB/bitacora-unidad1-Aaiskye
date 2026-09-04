@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\annak\\OneDrive\\Documents\\GitHub\\bitacora-unidad1-Aaiskye\\Unidad_2_Memoria\\Actividad_6\\Actividad_6_CS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9E96216E-435A-42A5-9263-52636A1E3932}|Actividad_6_CS.csproj|c:\\users\\annak\\onedrive\\documents\\github\\bitacora-unidad1-aaiskye\\unidad_2_memoria\\actividad_6\\actividad_6_cs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E96216E-435A-42A5-9263-52636A1E3932}|Actividad_6_CS.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\annak\\OneDrive\\Documents\\GitHub\\bitacora-unidad1-Aaiskye\\Unidad_2_Memoria\\Actividad_6\\Actividad_6_CS\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\annak\\OneDrive\\Documents\\GitHub\\bitacora-unidad1-Aaiskye\\Unidad_2_Memoria\\Actividad_6\\Actividad_6_CS\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwBwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T21:01:14.999Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
