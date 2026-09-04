@@ -41,7 +41,7 @@ Por qué: Porque se intenta escribir en una zona en la que no se tienen permiso 
 
 ### Experimento 2: ¿Qué ocurre? ¿Por qué?
 
-En este caso la excepción se da porque se intenta modificar una variable de tipo ´const´ lo cual también esta prohibido por seguridad del software.
+En este caso la excepción se da porque se intenta modificar una variable de tipo `const` lo cual también esta prohibido por seguridad del software.
 
 ### Experimento 3: ¿Qué ocurre? ¿Por qué?
 
@@ -53,6 +53,20 @@ En este experimento hay errores de compilación porque se esta intentando accede
 
 ### Experimento 6:
 
-En este caso el error en tiempo de ejecución se debe a que después de liberar la memoria del ´Heap´ se debería asignar un a `nullptr`. para evitar problemas posteriores.
+En este caso el error en tiempo de ejecución se debe a que después de liberar la memoria del `Heap` se debería asignar un a `nullptr`. para evitar problemas posteriores.
+
+## Actividad 5
+
+### 1. Explica qué ocurre al copiar un objeto en C++ y en C#. ¿Qué diferencias encuentras?
+
+En `C++` la copia es un objeto independiente con su espacio en memoria mientras que en `C#` es una referencia al objeto original.
+
+### 2. ¿Qué es `copia` en C++ y en C#? ¿Es una copia independiente de `original`?
+
+No, no es una copia independiente del original, es una referencia.
+
+## Actividad integradora
+
+## Actividad 6:
 
 
