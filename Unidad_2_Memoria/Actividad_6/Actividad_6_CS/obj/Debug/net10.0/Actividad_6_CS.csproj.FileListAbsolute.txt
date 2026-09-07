@@ -1,0 +1,15 @@
+C:\Users\annak\OneDrive\Documents\GitHub\bitacora-unidad1-Aaiskye\Unidad_2_Memoria\Actividad_6\Actividad_6_CS\bin\Debug\net10.0\Actividad_6_CS.exe
+C:\Users\annak\OneDrive\Documents\GitHub\bitacora-unidad1-Aaiskye\Unidad_2_Memoria\Actividad_6\Actividad_6_CS\bin\Debug\net10.0\Actividad_6_CS.deps.json
+C:\Users\annak\OneDrive\Documents\GitHub\bitacora-unidad1-Aaiskye\Unidad_2_Memoria\Actividad_6\Actividad_6_CS\bin\Debug\net10.0\Actividad_6_CS.runtimeconfig.json
+C:\Users\annak\OneDrive\Documents\GitHub\bitacora-unidad1-Aaiskye\Unidad_2_Memoria\Actividad_6\Actividad_6_CS\bin\Debug\net10.0\Actividad_6_CS.dll
+C:\Users\annak\OneDrive\Documents\GitHub\bitacora-unidad1-Aaiskye\Unidad_2_Memoria\Actividad_6\Actividad_6_CS\bin\Debug\net10.0\Actividad_6_CS.pdb
+C:\Users\annak\OneDrive\Documents\GitHub\bitacora-unidad1-Aaiskye\Unidad_2_Memoria\Actividad_6\Actividad_6_CS\obj\Debug\net10.0\Actividad_6_CS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\annak\OneDrive\Documents\GitHub\bitacora-unidad1-Aaiskye\Unidad_2_Memoria\Actividad_6\Actividad_6_CS\obj\Debug\net10.0\Actividad_6_CS.AssemblyInfoInputs.cache
+C:\Users\annak\OneDrive\Documents\GitHub\bitacora-unidad1-Aaiskye\Unidad_2_Memoria\Actividad_6\Actividad_6_CS\obj\Debug\net10.0\Actividad_6_CS.AssemblyInfo.cs
+C:\Users\annak\OneDrive\Documents\GitHub\bitacora-unidad1-Aaiskye\Unidad_2_Memoria\Actividad_6\Actividad_6_CS\obj\Debug\net10.0\Actividad_6_CS.csproj.CoreCompileInputs.cache
+C:\Users\annak\OneDrive\Documents\GitHub\bitacora-unidad1-Aaiskye\Unidad_2_Memoria\Actividad_6\Actividad_6_CS\obj\Debug\net10.0\Actividad_6_CS.sourcelink.json
+C:\Users\annak\OneDrive\Documents\GitHub\bitacora-unidad1-Aaiskye\Unidad_2_Memoria\Actividad_6\Actividad_6_CS\obj\Debug\net10.0\Actividad_6_CS.dll
+C:\Users\annak\OneDrive\Documents\GitHub\bitacora-unidad1-Aaiskye\Unidad_2_Memoria\Actividad_6\Actividad_6_CS\obj\Debug\net10.0\refint\Actividad_6_CS.dll
+C:\Users\annak\OneDrive\Documents\GitHub\bitacora-unidad1-Aaiskye\Unidad_2_Memoria\Actividad_6\Actividad_6_CS\obj\Debug\net10.0\Actividad_6_CS.pdb
+C:\Users\annak\OneDrive\Documents\GitHub\bitacora-unidad1-Aaiskye\Unidad_2_Memoria\Actividad_6\Actividad_6_CS\obj\Debug\net10.0\Actividad_6_CS.genruntimeconfig.cache
+C:\Users\annak\OneDrive\Documents\GitHub\bitacora-unidad1-Aaiskye\Unidad_2_Memoria\Actividad_6\Actividad_6_CS\obj\Debug\net10.0\ref\Actividad_6_CS.dll

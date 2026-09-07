@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Activida.d9fa643b\\x64\\Debug\\Actividad_Integradora.obj",
+            "outputs": [
+                "Activida.d9fa643b\\x64\\Debug\\Actividad_Integradora.cpp.obj.dt.module.json",
+                "Activida.d9fa643b\\x64\\Debug\\Actividad_Integradora.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

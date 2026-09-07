@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Actividad_5\\x64\\Debug\\Actividad_5.obj",
+            "outputs": [
+                "Actividad_5\\x64\\Debug\\Actividad_5.cpp.obj.dt.module.json",
+                "Actividad_5\\x64\\Debug\\Actividad_5.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

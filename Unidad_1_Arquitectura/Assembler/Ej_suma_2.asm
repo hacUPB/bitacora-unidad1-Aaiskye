@@ -1,0 +1,11 @@
+@5
+D=A
+@10
+D=D+A
+@20
+M=D
+(END)
+@END
+0;JMP
+
+//sumar 5+10

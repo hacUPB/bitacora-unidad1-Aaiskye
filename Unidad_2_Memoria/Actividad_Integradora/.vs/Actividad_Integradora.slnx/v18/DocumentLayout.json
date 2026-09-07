@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\annak\\OneDrive\\Documents\\GitHub\\bitacora-unidad1-Aaiskye\\Unidad_2_Memoria\\Actividad_Integradora\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9FA643B-EC83-424E-A16E-379F85F7DD73}|Actividad_Integradora.vcxproj|C:\\Users\\annak\\OneDrive\\Documents\\GitHub\\bitacora-unidad1-Aaiskye\\Unidad_2_Memoria\\Actividad_Integradora\\Actividad_Integradora.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D9FA643B-EC83-424E-A16E-379F85F7DD73}|Actividad_Integradora.vcxproj|solutionrelative:Actividad_Integradora.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Actividad_Integradora.cpp",
+              "DocumentMoniker": "C:\\Users\\annak\\OneDrive\\Documents\\GitHub\\bitacora-unidad1-Aaiskye\\Unidad_2_Memoria\\Actividad_Integradora\\Actividad_Integradora.cpp",
+              "RelativeDocumentMoniker": "Actividad_Integradora.cpp",
+              "ToolTip": "C:\\Users\\annak\\OneDrive\\Documents\\GitHub\\bitacora-unidad1-Aaiskye\\Unidad_2_Memoria\\Actividad_Integradora\\Actividad_Integradora.cpp",
+              "RelativeToolTip": "Actividad_Integradora.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-04T20:40:47.619Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

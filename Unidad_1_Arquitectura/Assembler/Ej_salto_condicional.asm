@@ -1,0 +1,16 @@
+@15
+D=A
+@Var
+M=D
+@10
+D=A
+@i
+M=D
+@i
+D=M
+@Var
+D=D-M
+@20
+D;JGT
+@30
+0;JMP

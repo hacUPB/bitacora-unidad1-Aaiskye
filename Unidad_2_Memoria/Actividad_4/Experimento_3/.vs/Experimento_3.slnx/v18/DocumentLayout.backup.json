@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\annak\\OneDrive\\Documents\\GitHub\\bitacora-unidad1-Aaiskye\\Unidad_2_Memoria\\Actividad_4\\Experimento_3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EEC3EE8E-B978-4C5E-BC03-2C569F702CA2}|Experimento_3.vcxproj|C:\\Users\\annak\\OneDrive\\Documents\\GitHub\\bitacora-unidad1-Aaiskye\\Unidad_2_Memoria\\Actividad_4\\Experimento_3\\Experimento_3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EEC3EE8E-B978-4C5E-BC03-2C569F702CA2}|Experimento_3.vcxproj|solutionrelative:Experimento_3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Experimento_3.cpp",
+              "DocumentMoniker": "C:\\Users\\annak\\OneDrive\\Documents\\GitHub\\bitacora-unidad1-Aaiskye\\Unidad_2_Memoria\\Actividad_4\\Experimento_3\\Experimento_3.cpp",
+              "RelativeDocumentMoniker": "Experimento_3.cpp",
+              "ToolTip": "C:\\Users\\annak\\OneDrive\\Documents\\GitHub\\bitacora-unidad1-Aaiskye\\Unidad_2_Memoria\\Actividad_4\\Experimento_3\\Experimento_3.cpp",
+              "RelativeToolTip": "Experimento_3.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-04T16:31:54.277Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

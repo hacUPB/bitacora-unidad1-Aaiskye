@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Activida.c3d07d6d\\x64\\Debug\\Actividad_10_ver_1.obj",
+            "outputs": [
+                "Activida.c3d07d6d\\x64\\Debug\\Actividad_10_ver_1.cpp.obj.dt.module.json",
+                "Activida.c3d07d6d\\x64\\Debug\\Actividad_10_ver_1.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}
