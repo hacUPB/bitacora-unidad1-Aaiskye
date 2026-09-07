@@ -72,8 +72,8 @@ No, no es una copia independiente del original, es una referencia.
 ## Actividad 7: Objetos en el heap
 
 Direcciones de memoria:
-`&pStack`	**0x0000003ff82ff8c8**
-`pHeap`		**0x000001bb4512b470**
+- `&pStack`	**0x0000003ff82ff8c8**
+- `pHeap`		**0x000001bb4512b470**
 
 **Reflexiona sobre lo siguiente**:
 
@@ -95,8 +95,8 @@ Aparece porque la función `cambiarNombre` trabaja con copia que solo existe al 
 2. ¿Por qué `original` sigue existiendo luego de llamar `cambiarNombre`?
 
 direcciones de memoria:
-`original`	**0x0000005300b2fab8**
-`p`		**0x0000005300b2fc88**
+- `original`	**0x0000005300b2fab8**
+- `p`		**0x0000005300b2fc88**
 
 porque lo que se destruyo fue la copia `p`. como se puede ver son objetos completamente distintos almacenados en diferentes direcciones de memoria. por lo que el destructor de `original` no se ejecuta.
 
@@ -108,8 +108,8 @@ Ambos se encuentran en el Stack pero se encuentran en diferentes posiciones de m
 
 ### Direcciones de memoria:
 
-`p` (apunta a)->	0x0000005d896ff928 
-`original`		0x0000005d896ff928
+- `p` (apunta a)->	0x0000005d896ff928 
+- `original`		0x0000005d896ff928
 
 1. ¿Qué ocurre ahora? ¿Por qué?
 
@@ -129,9 +129,9 @@ solo sobre el paso por puntero.
 
 ### Direcciones de memoria:
 
-`&c1`			0x000000b2b413f534 {valor=6 }
-`&c2`			0x000000b2b413f554 {valor=11 }
-`c3` (apunta a)-> 	0x000001ec54109b00 {valor=16 }
+- `&c1`			0x000000b2b413f534 {valor=6 }
+- `&c2`			0x000000b2b413f554 {valor=11 }
+- `c3` (apunta a)-> 	0x000001ec54109b00 {valor=16 }
 
 En este caso no se puede observar el atributo `total` porque es un atributo de tipo **static**. lo cual lo convierte en un atributo propio de la clase `Contador` y lo comparten los 3 objetos.
 
@@ -154,9 +154,9 @@ Los miembros estáticos son muy útiles para llevar un conteo de las instancias 
 
 1. Explica el ciclo de vida de un objeto en el stack versus uno en el heap.
 
-El compilador reserva el espacio de memoria en el stack cuando se crea el objeto, mensaje en pantalla `Constructor: Punto(100, 200) creado.`. vive mientras estamos al interior del bloque. pero al salir de la llave `}` se ejecuta automáticamente el destructor y se lee en la consola `Destructor: Punto(100, 200) destruido.`. Ahora ya no se puede ver en el inspector.
+El compilador reserva el espacio de memoria en el `stack` cuando se crea el objeto, mensaje en pantalla `Constructor: Punto(100, 200) creado.`. vive mientras estamos al interior del bloque. pero al salir de la llave `}` se ejecuta automáticamente el destructor y se lee en la consola `Destructor: Punto(100, 200) destruido.`. Ahora ya no se puede ver en el inspector.
 
-`pDinamico` se crea con **new** por lo que se reserva un espacio en el heap. vive mientras el código esta en ejecución o hasta que liberemos ese espacio en memoria con **delete**
+`pDinamico` se crea con **new** por lo que se reserva un espacio en el `heap`. vive mientras el código esta en ejecución o hasta que liberemos ese espacio en memoria con **delete**
 
 ### Primera modificación:
 
@@ -166,8 +166,33 @@ El compilador reserva el espacio de memoria en el stack cuando se crea el objeto
 
 1. ¿Por qué el objeto `pBloque` se destruye al salir del bloque y `pBloque2` no? Recuerda de nuevo, `pBloque2` es un objeto o es una referencia a un objeto?
 
-`pBloque` es un objeto y esta almacenado en el `Stack`. su ciclo de vida depende del primer bloque entre llaves. por eso se destruye al salir. Por otro lado `pBloque2` es un puntero. apunta a la dirección donde se almaceno el objeto de tipo Punto que se creo con **new**. como `pBloque2` se declaro por fuera de la segunda llave sobrevive al salir del segundo bloque. y lo mas importante es que `pBloque2` apunta a un objeto en el `Heap` que se debe liberar con un **delete**
+`pBloque` es un objeto y esta almacenado en el `stack`. su ciclo de vida depende del primer bloque entre llaves. por eso se destruye al salir. Por otro lado `pBloque2` es un puntero. apunta a la dirección donde se almaceno el objeto de tipo Punto que se creo con **new**. como `pBloque2` se declaro por fuera de la segunda llave sobrevive al salir del segundo bloque. y lo mas importante es que `pBloque2` apunta a un objeto en el `heap` que se debe liberar con un **delete**
 
 2. ¿En qué parte de la memoria se almacena `pBloque2`? ¿En qué parte de la memoria se almacena el objeto al que apunta `pBloque2`?
 
-`pBloque2` se almacena en el `Stack`, su valor es la dirección de memoria de un objeto almacenado en el `heap`
+`pBloque2` se almacena en el `stack`, su valor es la dirección de memoria de un objeto almacenado en el `heap`
+
+## Actividad integradora de aplicación
+
+### 1. Diagnóstico del problema (análisis):
+
+Error 1: Fuga de memoria. El constructor hace new int[3] y la clase no tiene destructor, así que nunca hay un delete[]. El objeto `heroe` vive en el `stack` y sólo guarda ahí la dirección del `array`; las **estadisticas** están en el heap. Al salir de `simularEncuentro()` el `stack` el objeto desaparece, pero las estadísticas en el `heap` sólo se libera con `delete`. El bloque queda reservado y ya se perdió el puntero a esa dirección. Entonces cada NPC creado reserva espacio en el `heap` para las **estadisticas** y la RAM crece sin parar.
+
+Error 2: Personaje copiaHeroe = heroe; usa el constructor de copia implícito, que copia miembro a miembro. nombre se copia de verdad, pero `estadisticas` es un puntero: se copia la dirección. Quedan dos objetos en el `stack` apuntando a las mismas estadisticas en el `heap`. Entonces la solución debe cubrir tanto al `original` como a la `copia`. Si arreglamos el Error 1 con un destructor, ambos objetos harán `delete` sobre la misma dirección esto llevaría a otro error.
+
+### 2. Solución y refactorización (síntesis y creación):
+
+Quitar la memoria dinámica. El tamaño es fijo y conocido en compilación, así que las `estadisticas` no tiene por qué estar en el `heap`.
+
+```
+int estadisticas[3];   // y no int* estadisticas; y luego estadisticas = new int[3];
+```
+
+Esto corrige los dos errores sin agregar problemas en tiempo de ejecución con un `delete`. Una mejora de calidad de vida es mostrar por la consola las `estadisticas` aprovechando que la función ya existe.
+
+### 3. Justificación de la Solución:
+
+No hay fugas porque no se reserva en el `heap`. Las `estadisticas` son del objeto y mueren con él. Además, al copiar miembro a miembro, las `estadisticas` se copian elemento a elemento, no como dirección. Cada Personaje tiene su propio espacio en memoria.
+
+Segundo, si no comparten puntero y sin `delete` en ninguna parte, las `estadisticas` de cada personaje son independientes.
+
